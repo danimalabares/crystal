@@ -75,12 +75,23 @@ including the [nine-vertex equivariant computation](https://github.com/danimalab
 
 - Public repository created: https://github.com/danimalabares/crystal
 - Initial remote commit: `736772e807390019d20f197d6593ce88b35935b9`.
-- The complete import is prepared locally but **has not been published**.
-  GitHub connector writes returned HTTP 403; command-line pushing lacked a
-  GitHub credential. User approval for public publication is explicit.
-- The source repository is unchanged. A reviewed source-migration patch is
-  supplied in the terminal handoff, to apply only after verifying the destination.
-- Terminal Claude should publish this snapshot, verify its 97 imported files,
-  apply the source migration with concurrency checks, and record both commit IDs.
-- Mac-local clone and `$alias` installation remain pending. See
-  [LOCAL_SETUP.md](docs/LOCAL_SETUP.md).
+- **Published.** The prepared snapshot was pushed as
+  [`29a275a61c808bbd7778bb064a8e61b079b65ca2`](https://github.com/danimalabares/crystal/commit/29a275a61c808bbd7778bb064a8e61b079b65ca2)
+  on `main`, from a Terminal Claude session on Dani's Mac with an authenticated
+  `gh`/Git credential. `python3 scripts/verify_import.py` passed against all 97
+  imported files before the commit; the pushed tree (109 files) was confirmed
+  identical to the local working tree from a fresh read of the remote.
+- The source migration was applied and pushed to
+  [danimalabares/grunbaum-cy-geography-zero-context](https://github.com/danimalabares/grunbaum-cy-geography-zero-context)
+  as [`a8f55bca41725711d0f98cde9061d42af661f23a`](https://github.com/danimalabares/grunbaum-cy-geography-zero-context/commit/a8f55bca41725711d0f98cde9061d42af661f23a),
+  after confirming the source was still at the pinned commit
+  `dd0f3771ff3f5502a956231a4c69d896e10f4a71` (no concurrent work), that the
+  supplied `source-migration.patch` applied cleanly, and that
+  `python3 scripts/make_manifest.py --verify` passed there afterward from a
+  fresh clone. Source history is intact; the two directories are now navigation
+  READMEs pointing at this repository. One tracked artifact,
+  `computations/space-group-cy3/output/extract_crystcat.stderr.log` (0 bytes),
+  was left in place there by the supplied patch rather than deleted; it is a
+  byte-identical duplicate of the copy already imported here, so no content is
+  lost, but the source directory is not fully empty of the migrated files.
+- Mac-local clone and `$alias` installation: see [LOCAL_SETUP.md](docs/LOCAL_SETUP.md).
