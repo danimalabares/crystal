@@ -1,27 +1,16 @@
 # Local installation and aliases
 
-The setup was prepared in a remote workspace, not on Dani's Mac. No Mac shell
-configuration or `~/dr` directory has been modified. The `$alias` skill was not
-available in this session, so no aliases have been invented or installed.
+Installed on Dani's Mac at `~/dr/crystal` (cloned from
+[danimalabares/crystal](https://github.com/danimalabares/crystal)) by Terminal
+Claude, using the local `$alias` skill.
 
-The public repository exists, but the prepared snapshot still needs uploading.
-Follow the terminal handoff to publish it. Clone it on the Mac:
+- Alias added to `~/github/config/aliases.sh`, in the "Mirror symmetry /
+  Calabi--Yau / Fano" section (near `dcy`, the CY3 folder alias it is topically
+  closest to):
+  - `dcrys` → `cd "$DRIVE_WORK_ROOT"/crystal` (i.e. `cd ~/dr/crystal`).
+- Checked for name collisions (none) and tested in a fresh interactive `zsh`.
+- Not committed to the config repo; per the `$alias` skill, aliases.sh changes
+  are only committed on explicit request. Run `sm` or open a new shell to pick
+  up `dcrys`.
 
-```sh
-mkdir -p ~/dr
-git clone https://github.com/danimalabares/crystal.git ~/dr/crystal
-```
-
-`git clone` refuses to overwrite an existing nonempty destination. If the local
-directory already exists, inspect its files, Git remote, and status before doing
-anything to it.
-
-Then ask Terminal Claude to read this file, `CLAUDE.md`, and the local `$alias`
-skill and finish alias installation for the project name `crystal`. It should
-inspect the current alias conventions and collisions, preserve existing work,
-and report the exact aliases it creates. If the skill is unavailable locally,
-report that limitation instead of guessing its behavior.
-
-The explanation requirement is already at
-`~/dr/crystal/dani-explanations-request.md`; Terminal Claude can read that path.
-No chat attachment is required.
+The explanation requirement is at `~/dr/crystal/dani-explanations-request.md`.
