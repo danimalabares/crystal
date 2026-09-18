@@ -185,13 +185,23 @@ executed successfully; see Setup checks.)
 
 ### Publication
 
-- **Published.** This batch was committed to `main` as `<crystal-batch-2-commit>` (filled in
-  after push below) and pushed. `python3 scripts/verify_import.py` (now checking all three
+- **Published.** This batch was committed to `main` as
+  [`c353b49b453d2c2cb04a8dc0d6bb8538352e1815`](https://github.com/danimalabares/crystal/commit/c353b49b453d2c2cb04a8dc0d6bb8538352e1815)
+  and pushed; a fresh clone of the remote was confirmed byte-identical to the local working tree. `python3 scripts/verify_import.py` (now checking all three
   manifests, 220 files total) passed before the commit.
 - The corresponding source-repository removal was applied and pushed as
-  `<source-batch-2-commit>` (filled in after push below), after confirming the source was
-  still at the pinned commit `a8f55bca41725711d0f98cde9061d42af661f23a` (no concurrent work)
-  and that `python3 scripts/make_manifest.py --verify` passed there afterward. This second
+  [`d7405bf0724c203b9d703233e11ce2273da1013a`](https://github.com/danimalabares/grunbaum-cy-geography-zero-context/commit/d7405bf0724c203b9d703233e11ce2273da1013a),
+  after confirming the source was still at the pinned commit
+  `a8f55bca41725711d0f98cde9061d42af661f23a` (no concurrent work). A follow-up commit,
+  [`ff3c5040257cca9161dbb76795b7d9a240f31374`](https://github.com/danimalabares/grunbaum-cy-geography-zero-context/commit/ff3c5040257cca9161dbb76795b7d9a240f31374),
+  fixed one `computations/SHA256SUMS` entry that had gone stale between generating the
+  manifest and a verification re-run of `scripts/run_checks.py` refreshing
+  `computations/publication_audit.stdout.txt`'s recorded file count. From a fresh clone
+  of `ff3c504`, `python3 scripts/make_manifest.py --verify`, `scripts/verify_runs.py`,
+  and `scripts/publication_audit.py` all pass (the bundled `scripts/run_checks.py`'s
+  `source` check additionally requires the sibling `../grunbaum-zero-context-proof`
+  checkout, which a bare clone does not have; this is a pre-existing, unrelated
+  environment requirement documented in that repository's own README). This second
   batch also removed the two remaining redirect-README directories from the first migration
   (`computations/crystallographic-links/`, `computations/space-group-cy3/`, including the
   leftover empty `output/extract_crystcat.stderr.log`) and the untracked local third-party
