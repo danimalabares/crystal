@@ -1,0 +1,54 @@
+Setup verification log for the second migration batch (2026-09-18):
+computations/cp29-normal-sections/, runs/cp2-nine-hilbert-dimension-audit-2026-09-10/,
+runs/cp2-nine-vertex-equivariant-t2-2026-09-09/, runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/.
+
+All reruns below were executed in throwaway scratch copies under /tmp (never inside the
+imported checkout, except computations/cp29-normal-sections/check.py, whose fresh/ output
+directory is purpose-built to be overwritten by design and was confirmed byte-identical
+before and after). Post-run, all 123 imported files were re-checked against
+migration/source-manifest-2.json and none had changed.
+
+1. python3 -B computations/cp29-normal-sections/check.py (run in place; self-contained;
+   writes only fresh/*). Exit 0. See setup-cp29-check.log for output. fresh/exact-check.json
+   and fresh/tangent-basis.json unchanged (verified against the manifest).
+
+2. python3 -B runs/cp2-nine-hilbert-dimension-audit-2026-09-10/check.py, run in a scratch
+   tree shaped like the repository root (runs/cp2-nine-hilbert-dimension-audit-2026-09-10/
+   plus runs/cp2-nine-vertex-equivariant-t2-2026-09-09/, since the script reads
+   runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/minimal_nonfaces.json via
+   Path(__file__).resolve().parents[2]). Exit 0. Output exact-check.json and
+   tangent-basis.json in the scratch copy are byte-identical to the committed files
+   (diff empty). This also confirms the real cross-directory dependency between the two
+   `runs/` directories, which must be migrated together and kept at repository-root-relative
+   paths runs/<name>/ for the scripts to keep working.
+
+3. Inside runs/cp2-nine-vertex-equivariant-t2-2026-09-09/, in a separate scratch copy:
+   - python3 -B scripts/verify_input.py: INPUT_VERIFIED; f-vector (9,36,84,90,36);
+     minimal nonfaces 36 quartics; G order 6 isomorphic to S3; Aut order 54;
+     G_equals_full_stabiliser_of_vertex_9 True. Rewritten data/minimal_nonfaces.json and
+     data/groups.json are byte-identical to the committed ones (diff empty).
+   - /Applications/Macaulay2-1.20/bin/M2 --script scripts/t2_dims.m2 (Macaulay2 1.20,
+     available in this environment): T1_shape (36, 93), T2_shape (90, 126), matching the
+     recorded dim Hom_S(I,A)_0 = 93 and dim (T2_A)_0 = 126 exactly. ~3.7s.
+   - python3 -B scripts/verify_certificate.py G_S3 6: CERTIFICATE_REVERIFIED G_S3;
+     dim_T2_0_invariants 14, dim_T1_0_invariants 23 (both trace-check consistent).
+   - python3 -B scripts/verify_certificate.py Aut54_generators 54: CERTIFICATE_REVERIFIED;
+     dim_T2_0_invariants 0, dim_T1_0_invariants 5.
+   - Rewritten certificates/G_S3_python_reverification.json and
+     certificates/Aut54_generators_python_reverification.json are byte-identical to the
+     committed ones (diff empty).
+   This independently reproduces every headline number of RESULTS.md (93, 21, 126, 14, 0,
+   5, 3, 2) using the imported files alone.
+
+4. runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/ was NOT rerun. Its REPRODUCE.md
+   pipeline needs SageMath/GAP and several Macaulay2 jobs totaling roughly 45 minutes, and
+   step 8 is explicitly a killed 17-hour, no-output attempt that must not be repeated. Byte
+   identity of all 50 files was verified (migration/source-manifest-2-untracked.json); its
+   Python and JSON files were parsed successfully; no script contains a hardcoded absolute
+   path apart from the standard /Applications/Macaulay2-1.20/bin/M2 invocation already used
+   throughout this repository's other runs. This matches this migration's evidentiary bar:
+   verifying import integrity, not re-running or auditing the mathematics.
+
+None of this resolves or re-examines any open mathematical question in these runs; it
+confirms only that the imported bytes reproduce the same committed bytes and numbers when
+executed, exactly as scripts/verify_import.py checks statically.

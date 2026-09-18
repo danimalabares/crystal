@@ -1,0 +1,9 @@
+link_9_facets 20 minimal_nonface_triples 16
+packet_sphere_facets 20
+number_of_isomorphisms_link9_to_M 6
+one_isomorphism {1: 'b', 2: 'e', 3: 'h', 4: 'a', 5: 'c', 6: 'g', 7: 'd', 8: 'f'}
+stabiliser_order 6
+stabiliser_as_strings_on_abcdefgh ['abcdefgh', 'ahgfedcb', 'ceafbdgh', 'chgdbfae', 'gbcfhdae', 'geadhfcb']
+packet_G_strings ['abcdefgh', 'ahgfedcb', 'ceafbdgh', 'chgdbfae', 'gbcfhdae', 'geadhfcb']
+same_group_as_packet_G True
+VERTEX_LINK_DONE

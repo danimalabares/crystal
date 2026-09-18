@@ -1,0 +1,524 @@
+{
+ "source_commit": "a8f55bca41725711d0f98cde9061d42af661f23a",
+ "source_repo": "danimalabares/grunbaum-cy-geography-zero-context",
+ "imported_paths": [
+  "computations/cp29-normal-sections",
+  "runs/cp2-nine-hilbert-dimension-audit-2026-09-10",
+  "runs/cp2-nine-vertex-equivariant-t2-2026-09-09"
+ ],
+ "file_count": 73,
+ "total_bytes": 1387090,
+ "files": [
+  {
+   "path": "computations/cp29-normal-sections/README.md",
+   "bytes": 1686,
+   "sha256": "49f2d57b5c73348078797801e977372889555e8717bb6f1ff26ae9a3857a0a55",
+   "git_blob_sha1": "b983dde43245c18414cc0a94619b111ee04bdbec",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/check.py",
+   "bytes": 6774,
+   "sha256": "258b5a1ee4e58f4338ed37af09436571d4d4e1d24788d2251bc95392cd2b9a22",
+   "git_blob_sha1": "aa383ab9727f47470ca580fd0ee5efccbc656eb0",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/fresh/README.md",
+   "bytes": 261,
+   "sha256": "028d97598b73ac687a6251593ce6a1a3692eb2342128032f6c45dfed966b3e89",
+   "git_blob_sha1": "58594b288c5fd3cfd852bbf27353e546930717c1",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/fresh/exact-check.json",
+   "bytes": 15981,
+   "sha256": "609de4614ababc28811dc67941786a30d708cefc110715821ecff3d2443f33ad",
+   "git_blob_sha1": "b3afe3d16fcac39abb65f3436b848ad1b2e146ef",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/fresh/exact-check.log",
+   "bytes": 1017,
+   "sha256": "d4a0441a54c0cd4d311b5759df8b2af993d95cbc253f62e8e1f4b45c7ef7bb2e",
+   "git_blob_sha1": "beed53a209114b816449ebffb1646b2c072ef42e",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/fresh/tangent-basis.json",
+   "bytes": 15772,
+   "sha256": "0a3b5ad17b0c24e72d6e6f9c4d5256b84246eaac6632e0592205c49492aed37b",
+   "git_blob_sha1": "1c8f1d048dfb0e26f0cbe33f25a9af9aa19371e7",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/CHECKPOINT.md",
+   "bytes": 709,
+   "sha256": "2ee2fe66b7512bea5fa0b707c1b0a5bb79a2143970a5c7e7c9aaadc96d564f2b",
+   "git_blob_sha1": "fcfed3fe092e48f9d4f90259dd1a16fb7664ee45",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/DISCOVERY.md",
+   "bytes": 793,
+   "sha256": "349bbb14f65006483da22eb199d0fd9ef45854886e3ea0f533ba62ee2536ad50",
+   "git_blob_sha1": "b3e0e08f4ad2698178c4ff77780faaaa795bde56",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/REPRODUCE.md",
+   "bytes": 3630,
+   "sha256": "46900ac0e51ba8d3a97d0be6568b02c75dcc835c6475f6077ba5b15570ea5036",
+   "git_blob_sha1": "b4257d68d32a21221f0811010eddc47f0c043d94",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/RESULTS.md",
+   "bytes": 6993,
+   "sha256": "eca7647fcf93824152e46ec54d7ffdf99d056d2f8d8e8d4564bd0a20ed88ff43",
+   "git_blob_sha1": "9b2964c1ceec75864a73e98b9e205ca515eba291",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/SHA256SUMS.json",
+   "bytes": 1053,
+   "sha256": "2173a2263f928965f80135bc674f21f91d0fb910d43d42573aa9b6ccccf9733b",
+   "git_blob_sha1": "bdf1af88fc502c2ef0c705ee1ab18a8e1f26fc06",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/SOURCES.md",
+   "bytes": 3648,
+   "sha256": "3a7bdac99fe007af2c5eb07065c4f918ecc14d4a8bc5e4346acadc0b6e06db72",
+   "git_blob_sha1": "4843d3061f1abed9f9b67fe12655c6140c572dc3",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/check.py",
+   "bytes": 6586,
+   "sha256": "d1903f77ac4bb19f89d800e2e613295891671d2d43908b995a9479a69c5fcd52",
+   "git_blob_sha1": "7259a31c0a4131949b4238b6e89fbdacccfe1f21",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/exact-check.json",
+   "bytes": 15981,
+   "sha256": "609de4614ababc28811dc67941786a30d708cefc110715821ecff3d2443f33ad",
+   "git_blob_sha1": "b3afe3d16fcac39abb65f3436b848ad1b2e146ef",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/exact-check.log",
+   "bytes": 1017,
+   "sha256": "d4a0441a54c0cd4d311b5759df8b2af993d95cbc253f62e8e1f4b45c7ef7bb2e",
+   "git_blob_sha1": "beed53a209114b816449ebffb1646b2c072ef42e",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/ledger.json",
+   "bytes": 14839,
+   "sha256": "7545f1b0cbc78c8d9880370c417422d1c4fa9c3123dffd4f536c3e146a3fef85",
+   "git_blob_sha1": "f17f20b55ad7983069453c5b1759ab0766d7e1fb",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/run-manifest.json",
+   "bytes": 2809,
+   "sha256": "79881e83c7a699b51afba1f67ee1f974a0c0537fa0308b0dad3cc0b465aff68f",
+   "git_blob_sha1": "2982ab69a3a760a00dd7147691bfb4e67ff5aab6",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/source-manifest.json",
+   "bytes": 2285,
+   "sha256": "c5856cf839faccd9ed3957a66155ce7b946f6495bd3e28a280433423cfc91bdc",
+   "git_blob_sha1": "823d5cbd2c19fb45c51b0052f5cf0329f7e5b718",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/historical/tangent-basis.json",
+   "bytes": 15772,
+   "sha256": "0a3b5ad17b0c24e72d6e6f9c4d5256b84246eaac6632e0592205c49492aed37b",
+   "git_blob_sha1": "1c8f1d048dfb0e26f0cbe33f25a9af9aa19371e7",
+   "mode": "644"
+  },
+  {
+   "path": "computations/cp29-normal-sections/input/minimal_nonfaces.json",
+   "bytes": 2611,
+   "sha256": "979aee6fd259264199578a039eaca13495caaa1e93c100c36eb8c753f5c15a95",
+   "git_blob_sha1": "f03fbd3066436a82f5422edc0d5e2a1741244e99",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/CHECKPOINT.md",
+   "bytes": 709,
+   "sha256": "2ee2fe66b7512bea5fa0b707c1b0a5bb79a2143970a5c7e7c9aaadc96d564f2b",
+   "git_blob_sha1": "fcfed3fe092e48f9d4f90259dd1a16fb7664ee45",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/DISCOVERY.md",
+   "bytes": 793,
+   "sha256": "349bbb14f65006483da22eb199d0fd9ef45854886e3ea0f533ba62ee2536ad50",
+   "git_blob_sha1": "b3e0e08f4ad2698178c4ff77780faaaa795bde56",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/HASH_MANIFEST.json",
+   "bytes": 1142,
+   "sha256": "a3bfe14dd8b037c354c6cf15ecc3abece0aeb4a42df5e64fb41d7d501e963584",
+   "git_blob_sha1": "7bfd53c26519fe2877c8bc6e594bdc9fc075d34d",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/REPRODUCE.md",
+   "bytes": 3630,
+   "sha256": "46900ac0e51ba8d3a97d0be6568b02c75dcc835c6475f6077ba5b15570ea5036",
+   "git_blob_sha1": "b4257d68d32a21221f0811010eddc47f0c043d94",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/RESULTS.md",
+   "bytes": 6993,
+   "sha256": "eca7647fcf93824152e46ec54d7ffdf99d056d2f8d8e8d4564bd0a20ed88ff43",
+   "git_blob_sha1": "9b2964c1ceec75864a73e98b9e205ca515eba291",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/SHA256SUMS.json",
+   "bytes": 1053,
+   "sha256": "2173a2263f928965f80135bc674f21f91d0fb910d43d42573aa9b6ccccf9733b",
+   "git_blob_sha1": "bdf1af88fc502c2ef0c705ee1ab18a8e1f26fc06",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/SOURCES.md",
+   "bytes": 3648,
+   "sha256": "3a7bdac99fe007af2c5eb07065c4f918ecc14d4a8bc5e4346acadc0b6e06db72",
+   "git_blob_sha1": "4843d3061f1abed9f9b67fe12655c6140c572dc3",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/check.py",
+   "bytes": 6586,
+   "sha256": "d1903f77ac4bb19f89d800e2e613295891671d2d43908b995a9479a69c5fcd52",
+   "git_blob_sha1": "7259a31c0a4131949b4238b6e89fbdacccfe1f21",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/exact-check.json",
+   "bytes": 15981,
+   "sha256": "609de4614ababc28811dc67941786a30d708cefc110715821ecff3d2443f33ad",
+   "git_blob_sha1": "b3afe3d16fcac39abb65f3436b848ad1b2e146ef",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/exact-check.log",
+   "bytes": 1017,
+   "sha256": "d4a0441a54c0cd4d311b5759df8b2af993d95cbc253f62e8e1f4b45c7ef7bb2e",
+   "git_blob_sha1": "beed53a209114b816449ebffb1646b2c072ef42e",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/ledger.json",
+   "bytes": 14839,
+   "sha256": "7545f1b0cbc78c8d9880370c417422d1c4fa9c3123dffd4f536c3e146a3fef85",
+   "git_blob_sha1": "f17f20b55ad7983069453c5b1759ab0766d7e1fb",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/run-manifest.json",
+   "bytes": 2809,
+   "sha256": "79881e83c7a699b51afba1f67ee1f974a0c0537fa0308b0dad3cc0b465aff68f",
+   "git_blob_sha1": "2982ab69a3a760a00dd7147691bfb4e67ff5aab6",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/source-manifest.json",
+   "bytes": 2285,
+   "sha256": "c5856cf839faccd9ed3957a66155ce7b946f6495bd3e28a280433423cfc91bdc",
+   "git_blob_sha1": "823d5cbd2c19fb45c51b0052f5cf0329f7e5b718",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-hilbert-dimension-audit-2026-09-10/tangent-basis.json",
+   "bytes": 15772,
+   "sha256": "0a3b5ad17b0c24e72d6e6f9c4d5256b84246eaac6632e0592205c49492aed37b",
+   "git_blob_sha1": "1c8f1d048dfb0e26f0cbe33f25a9af9aa19371e7",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/CHECKPOINT.md",
+   "bytes": 1857,
+   "sha256": "6de8adfdbc7b3a949e92c499381ffcc199b3c07585053a0b5e822f65676e3255",
+   "git_blob_sha1": "afaf786982a13d569756113c9d514812251161b8",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/HASH_MANIFEST.json",
+   "bytes": 3849,
+   "sha256": "1a7acd410a7ffcb8623dc84c473b23bc4f84c871d5135331cbacf28f8b8fb3d4",
+   "git_blob_sha1": "e8d0e075aae22116049bff2fe287e03e3a228f66",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/PUBLICATION_VERIFICATION.md",
+   "bytes": 3829,
+   "sha256": "7aba93defb0954c74070a95a3ae3ad88af3bef5bf0571dc57813d3217898f9b4",
+   "git_blob_sha1": "70d7d2a636a956374990444a570636dae548ea45",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/REPRODUCE.md",
+   "bytes": 2330,
+   "sha256": "cf533a655f06b746d0dcd0d1d708ad9ad734bd034e7956b674a0a9ac9eaa3467",
+   "git_blob_sha1": "4ec920d42c9b8e271b77b925e6034e6fa5866316",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/RESULTS.md",
+   "bytes": 17116,
+   "sha256": "35381332951698553fd0cfe0591868520f4f9230f37d63663e32e5178d2ce42e",
+   "git_blob_sha1": "0e1b7f978ede5d6ee6a062bcee4b6aead9197b23",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/SOURCE_STATE.json",
+   "bytes": 992,
+   "sha256": "95bd693ae5ec3953ca274c192e7d47f1a583864c88525d65de58ca353ce4fb4a",
+   "git_blob_sha1": "1c19b5ac11c324c8234b0d5fd7c5c90c52e96915",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/Aut54_coordinate_orbit_coords.txt",
+   "bytes": 24137,
+   "sha256": "f39bc04bfc4d67356d175cd435e62215dcdaa08f905cec1534f7b7c4da3ac99c",
+   "git_blob_sha1": "a29b10efe5845866ba2c5670a0bba632b8d18b19",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/Aut54_generators_basis.m2.txt",
+   "bytes": 123707,
+   "sha256": "fb9b127e5adbd1df071d478125f8b89188068eb6733ba8dfcfe8f09761f4356c",
+   "git_blob_sha1": "0646d1d657d3d256412c652b6d115949939256d3",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/Aut54_generators_certificate.json",
+   "bytes": 371994,
+   "sha256": "c92cd4d94cbc28d20b77d89fbdb66e8a86c94579f1cc847e9de633726b03d135",
+   "git_blob_sha1": "5e6231fce4c5ff95000127e93382e44a17b09508",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/Aut54_generators_python_reverification.json",
+   "bytes": 466,
+   "sha256": "107b105ca2d3d15d7473d6543507c5195c09c3019c98c3b142da8e7cbc8477fa",
+   "git_blob_sha1": "152cd6c32fdc4f499f49dea8b9a794af12da62ea",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/G_S3_basis.m2.txt",
+   "bytes": 123707,
+   "sha256": "fb9b127e5adbd1df071d478125f8b89188068eb6733ba8dfcfe8f09761f4356c",
+   "git_blob_sha1": "0646d1d657d3d256412c652b6d115949939256d3",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/G_S3_certificate.json",
+   "bytes": 446229,
+   "sha256": "a28942cbc90655711850a0d05d244b92ea7d2ffc5bcb0d1317a635a1f097f4e7",
+   "git_blob_sha1": "8f750e533283c62decf504cc98a72dbb04969b6a",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/G_S3_coordinate_orbit_coords.txt",
+   "bytes": 28880,
+   "sha256": "a7a6635d475bf0fd6f279b61162781811ab3db44f61532047dd277b130a5c561",
+   "git_blob_sha1": "12430fa541f176db0543b0ff641f49c6413a2979",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/certificates/G_S3_python_reverification.json",
+   "bytes": 306,
+   "sha256": "47399c50e5aa2f1258f8bce3b2ae16ec8544e5bf65a559e7b4ce98d7b3291f15",
+   "git_blob_sha1": "52594f3acdbc018267df41e6603a18a329a7487f",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/facets_chapoton_manivel_1109.6490v1.txt",
+   "bytes": 554,
+   "sha256": "659074d085c4f8cfd99ae9c4ff31e4e24d15c53c7b2cd795a6f0554fb19be3a1",
+   "git_blob_sha1": "0379f4058003c42e3ebc191dadbf05a0d6aaf3e4",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/generators.m2.txt",
+   "bytes": 586,
+   "sha256": "bbf48ce88c773ec71a665e0a29cda97e6aeb095eca7e6dd82964276d1c3de15c",
+   "git_blob_sha1": "a21578758fbb335201a816daff3f94e7ea16ea09",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/group_Aut54.txt",
+   "bytes": 1017,
+   "sha256": "c5bc724d8252d3bc7685be27c3ad47765b8b826aafbb2c565e66368a8cf14cb3",
+   "git_blob_sha1": "3e7c690b4dd3c82ac11251b96917101be45f060c",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/group_Aut54_generators.txt",
+   "bytes": 227,
+   "sha256": "55f758e64aaf2e1a52a31040a935a32227174e61ed222740d1ee9ef83fe89836",
+   "git_blob_sha1": "82764d77503308ea87d83f70e41ddf5082793447",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/group_G_S3.txt",
+   "bytes": 161,
+   "sha256": "92e7c1eef8903bb0800c6d4beb0b8dea791fede578d708c2b965cb2497b38e6a",
+   "git_blob_sha1": "b4eaeabda5a43bfc65ffcbcc3143706c6daced28",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/groups.json",
+   "bytes": 4201,
+   "sha256": "72d0287a0edd33690313b69a692cfb8164ece263af7d4e00b3b81f9ffa0c53c2",
+   "git_blob_sha1": "a26b55f5ee88488812a7641a3d2b612e667ad431",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/minimal_nonfaces.json",
+   "bytes": 2611,
+   "sha256": "979aee6fd259264199578a039eaca13495caaa1e93c100c36eb8c753f5c15a95",
+   "git_blob_sha1": "f03fbd3066436a82f5422edc0d5e2a1741244e99",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/orbitals_Aut54.txt",
+   "bytes": 421,
+   "sha256": "86338bcfa6e358a16209ccef568cd3a250f9f6d18d1514ead6042a58b6e7d864",
+   "git_blob_sha1": "a6fec5eb608f4f984c79a84a603b488f23adb7ab",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/data/orbitals_G_S3.txt",
+   "bytes": 420,
+   "sha256": "d123109aca28152388bf9fccc1232ca61fe8d6591e6510fbc64686385e063dcf",
+   "git_blob_sha1": "58898d341ff4538c7d793f486a898cebef624cd5",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/coordinate_orbit_Aut54.log",
+   "bytes": 142,
+   "sha256": "841a071364ff24a7b8856595ee0dba32f85cb65c67d4758df352edcac490570c",
+   "git_blob_sha1": "c353b24ddf31d2d7955b7cbada246fa0cf7db8d3",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/coordinate_orbit_G_S3.log",
+   "bytes": 144,
+   "sha256": "54add42fa0d757d82ac93e29383e9c9cd5b48aa6e3d841383bd5997e2a93568c",
+   "git_blob_sha1": "7e6f0a08799e90f74d1a582c949ea607718e6076",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/equivariant_t2_Aut54_generators.log",
+   "bytes": 791,
+   "sha256": "73caf97e0e00cca0bca8fbf4cde0f7d9a83a2cd72fd5b05f0fe3ff4c12a56f1b",
+   "git_blob_sha1": "3760d4f459bcd2e32623d8addf6966351c3f2c70",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/equivariant_t2_G_S3.log",
+   "bytes": 1030,
+   "sha256": "b54c4f290a203d06d095f2336cfd02a9fe29c07603e9c2afae3d0d3f7f41391f",
+   "git_blob_sha1": "cc92f0df7c95d1fb9a3c5c2f9b5a3dc386d3d214",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/quadric_rank_check.log",
+   "bytes": 72,
+   "sha256": "d3516df4107a04da92401c746c7729c5485d34502635101b7faa4e532fbe8738",
+   "git_blob_sha1": "57c0cb295f7e4bd046613368e49868461c43e2d5",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/t2_dims.log",
+   "bytes": 378,
+   "sha256": "554c11819b4dd3cac774a68af005de742942aa6fdea453fa4a056d6729e92865",
+   "git_blob_sha1": "86aea08ff33965913d7f8a79713496f96406c4c7",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/verify_certificate_Aut54.log",
+   "bytes": 498,
+   "sha256": "4018145666b164c444dd442323c4a25a83bb5126d1544295fcd70c0a19a1a1cb",
+   "git_blob_sha1": "8d73bee6735ab15b1b8153cb60e9d20819ffda4e",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/verify_certificate_G_S3.log",
+   "bytes": 418,
+   "sha256": "31ec54a9d5cfc971c08ee664dd4fdb78d0f0a8f8a5c406e43d2ad940b5ad4f4f",
+   "git_blob_sha1": "aada039f3f0d6f950d1b913746ca6e3a86ad1647",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/logs/verify_input.log",
+   "bytes": 269,
+   "sha256": "782337dd0603fe9978724eb13453f789fac58344bf4a5be070eb39b22fea325e",
+   "git_blob_sha1": "284b80053391c6890b281a4735b2922ffc9bf7e5",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/coordinate_orbit.m2",
+   "bytes": 2731,
+   "sha256": "a52881947c6182742ca57f7bc02a3326082e70a82270cde12ac64e620200f992",
+   "git_blob_sha1": "f6b128ec73c92fc3eb4d82397e3bc154ea578301",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/equivariant_t2.m2",
+   "bytes": 8034,
+   "sha256": "805d8cdddc656c78617caee4f0c280468f442a830fb95639252be572e85ab478",
+   "git_blob_sha1": "8d6e583b1d979565e92da5d90276472d2be9cfec",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/hash_run.py",
+   "bytes": 637,
+   "sha256": "65700152a7ae1f45a501783a1a2d39fdb9079207cd21b34ad9114cce99d250b3",
+   "git_blob_sha1": "43c3eb406859454af0d4775b26efdb528e6765d2",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/quadric_rank_check.m2",
+   "bytes": 1936,
+   "sha256": "a487171b4e8ef758de8eae51bcce02ee1f9e3cef093214c8ddd67a6047894f1d",
+   "git_blob_sha1": "2284e7bcfcd870f7ec312441357d5796a478af7c",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/t2_dims.m2",
+   "bytes": 1362,
+   "sha256": "75d1e4613f6b423683e72ac602dac7eb08ee7a969ec90d5952c052ae451a5503",
+   "git_blob_sha1": "5cc411ec7d24a5d5be1c40c908ffb1d63c3affce",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/verify_certificate.py",
+   "bytes": 6389,
+   "sha256": "cd5b247f762df11a65559c7726164207144fef7a9c3d1ab56a4b94d4e77be90e",
+   "git_blob_sha1": "827a56485a190d5d4d40e66c02ce114551307a67",
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09/scripts/verify_input.py",
+   "bytes": 5188,
+   "sha256": "2314b580f70c662ad01374ee9bc261f32ae547891c84074bee7125e876756db5",
+   "git_blob_sha1": "aa93fb4d4b75259675f9b6b09646cf3c71bb5799",
+   "mode": "644"
+  }
+ ]
+}

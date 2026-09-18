@@ -1,0 +1,4 @@
+irreducible_degrees [1, 1, 1, 1, 1, 1, 2, 2, 2, 6]
+T1_decomposition ['5', '2', '1', '1', '4', '4', '2', '3', '3', '10']  check dim 93
+T2_decomposition ['0', '4', '4', '4', '0', '0', '5', '5', '5', '14']  check dim 126
+DECOMPOSE_DONE

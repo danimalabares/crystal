@@ -1,0 +1,264 @@
+{
+  "summary": "Literature checks and independent rechecks for the CP2_9 invariant-smoothing run",
+  "agentCount": 6,
+  "logs": [
+    "[research:kuhnel] failed: You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+    "[research:recheck] failed: You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+    "[research:depth] failed: You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+    "[verify:ikkr] failed: You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+    "[research:lattice] failed: You've hit your session limit · resets 7:20pm (America/Sao_Paulo)"
+  ],
+  "result": [
+    {
+      "key": "ikkr",
+      "report": {
+        "summary": "Primary-literature check on generalized Kummer (Kum_2-type) fourfolds in P^8. Headline: the task's premise about IKKR is wrong — arXiv:1603.00403 (Iliev–Kapustka–Kapustka–Ranestad, \"Hyperkähler fourfolds and Kummer surfaces\", Proc. LMS; v2 12 Aug 2017) is entirely about K3^[2]-type fourfolds (q=4, degree 48, Verra fourfolds, EPW cubes) and Kummer QUARTIC SURFACES; it contains no statement about generalized Kummer fourfolds, P^8, degree 36, Heisenberg groups, Fujiki constants or Stanley–Reisner degenerations (full text extracted and grepped). The actual primary sources are: (a) Fujiki/RR: Rapagnetta math/0606409 p.2 table (Kum_n: b_2=7, Fujiki constant (2n)!/(n!2^n)(n+1) = 9 for n=2, lattice U^3 ⊕ <-2(n+1)>) and Britze–Nieper math/0101062 Thm 5.1 (p.18) + Lemma 5.2 (p.19): χ(L) = (n+1)·binom(q(L)/2+n, n), so q=2, n=2 gives h^0=9, H^4 = 9·2^2 = 36 — both confirmed verbatim in Agostini–Beri–Giovenzana–Ríos Ortiz (ABGR) arXiv:2505.14490 p.7 and Prop 7.14 (p.33: \"D^4 = 9·q(D,D)^2 = 9·4 = 36\"). (b) P^8 models exist in the literature ONLY for Jacobian Kummer fourfolds Kum_2(J(C)): ABGR Theorem A (p.2; φ_{μ_2(Θ)}: Kum_2(A) → |3Θ| = P^8, birational, embeds the singular Kummer Σ_2(A), contracts E) and Theorem B (p.3; φ_{μ_2(2Θ)-δ}: Kum_2(A) → P̌^8 contracts F onto A ⊂ P̌^8, embedding elsewhere, image = Sing(Sec(A)), a fourfold of degree 36); both line bundles are big and nef but NOT ample (Prop 6.1, p.21); the two models are exchanged by the polar (quadratic) map of the Coble cubic (Thm 6.10, p.26); the image is not contained in any quadric (Lemma 6.9, p.25); explicit equations are NOT given (§9, p.37 lists producing them as an open direction); the theta group of D is the Heisenberg group H(3,3) with H^0 the 9-dim Schrödinger representation and A[3] ≅ (Z/3)^4 acting on P̌^8 by translations (Remark 6.7, Prop 6.8, p.25; via O'Grady arXiv:2204.09582 Thm 1.1 p.2 / Thm 3.2). No paper found proves the GENERAL q=2 Kum_2-type fourfold embeds in P^8: ABGR p.1 (\"there is yet no description of a complete family for varieties of Kummer type of dimension larger than two\") and §9 p.36 pose extension to the complete 4-dimensional family as an open question; Boissière–Nieper-Wißkirchen–Sankaran (BNWS) arXiv:2505.14444 p.2 say deforming their construction is \"work in progress\" and that BMT's flag-variety model \"does not deform\"; Bayer–Perry–Pertusi–Zhao's locally complete families are cited as forthcoming, not found on arXiv. (c) Degenerations to unions of P^4's / Stanley–Reisner schemes: NOT FOUND in any of ABGR, BNWS, BMT (arXiv:1904.10848), O'Grady, IKKR. Chapoton–Manivel arXiv:1109.6490 (§4.2 p.11 Conjecture; §5 p.13) treat the 9-vertex CP^2 triangulation via representation theory of the Severi variety P^2×P^2 ⊂ P^8 and a conjectural degeneration of a complex L• to L•_Δ — no hyperkähler/Kummer content. Computed by me from the run's facet file: f-vector (9,36,84,90,36), χ(Δ)=3; the Stanley–Reisner Hilbert polynomial is exactly (3/2)t^4 + (9/2)t^2 + 3 = 3·binom(t^2+2,2) = χ(tH) for Kum_2-type with q(H)=2 (identical polynomials, and P(0)=3=χ(O_X)); the SR ideal has exactly 36 quartic generators and no quadrics/cubics, matching the dimension count binom(k+8,8) − χ(kH) = 0,0,0,36 for k=1..4 (so h^0(I_X(4)) ≥ 36 for any such smooth X, with equality iff 4-normal). The order-54 group is (Z/3)^2 ⋊ S_3 ⊂ AGL_2(F_3) with normal Heisenberg Sylow-3 subgroup of order 27; its translation subgroup plus diagonal scalings make SR(Δ) invariant under the finite level-3 Heisenberg group on P^8 (image (Z/3)^4 in PGL_9), the same abstract group that acts on ABGR's models — but this matching is my computation, not literature. (d) Moduli: dimension 4 verified (BNWS Appendix A.3 p.28: \"Their dimension is 4, whereas the families of polarised abelian surfaces have dimension 3\"); there are two distinct q=2 moduli spaces, divisibility 1 (μ_2(Θ)) and divisibility 2 (μ_2(2Θ)−δ) — divisibilities computed by me; M^{2,2}_{Kum_2} is rational (BNWS p.28 citing Wang–Williams Thm 5.4; Barros–Beri–Flapan–Williams arXiv:2407.07622 p.28) and every family of (2,2)-polarized Kum_2-type fourfolds over a projective base is isotrivial (BBFW abstract). The Hilbert-scheme count 4 + dim PGL_9 = 84 is my computation, conditional on the (unproven) generic embedding and on finiteness of Aut(X,H) (standard, recalled, not verified here); it appears in none of the sources. Scratch copies of all extracted texts: /private/tmp/claude-501/-Users-daniel-github-grunbaum-cy-geography-zero-context/38d24f03-50bb-43a8-931c-30568932c1fe/scratchpad/wf/ (ikkr_1603.00403.txt, 2505.14490.txt, 2505.14444.txt, 1904.10848.txt, 2606.10884.txt, math_0606409.txt, math_0101062.txt, 1109.6490.txt, ogrady_2204.09582.txt, bbfw_2407.07622.txt).",
+        "findings": [
+          {
+            "claim": "arXiv:1603.00403 (IKKR, 'Hyperkähler fourfolds and Kummer surfaces', Proc. LMS) is about K3^[2]-type fourfolds and Kummer quartic surfaces, not generalized Kummer fourfolds; it contains none of the requested statements.",
+            "status": "verified-primary-source",
+            "source": "arXiv:1603.00403v2 (12 Aug 2017), title page, abstract, Contents, p.2, p.17 (full PDF text extracted and grepped)",
+            "detail": "Abstract: 'a Hilbert scheme of conics on a Fano fourfold double cover of P2×P2 ramified along a divisor of bidegree (2,2) admits a P1-fibration with base being a hyper-Kähler fourfold ... of type K3^[2] ... three constructions of quartic Kummer surfaces in P3'. p.2: 'The aim of this article is to investigate a special 19-dimensional family U of IHS fourfolds of type K3^[2] admitting a polarization of Beauville degree q = 4 (i.e degree 48)'. Main results: Theorem 0.1 (double cover X_A → D^1_A, IHS of K3^[2] type with q=4), Theorem 0.2 (Hilbert scheme of conics on a Verra fourfold is a P1-fibration over X), Theorem 0.3 (moduli of twisted sheaves on a degree-2 K3 with 2-torsion Brauer class), Corollary 0.5. Only Riemann–Roch use, p.17: 'If (X,H) is a polarized IHS fourfold of type (K3)^[2] with q(H)=4, we infer H^4 = 3·(4)^2 = 48, and from the Riemann–Roch theorem we find h^0(O_X(H)) = 10 [Nie03, Theorem 5.2]'. Term counts in full text: 'generalized Kummer' 0, 'Heisenberg' 0, 'Fujiki' 0, 'Stanley'/'Reisner' 0; 'Kummer' 43 times, all 'Kummer surface/quartic'; '36' only in '3∗36' (degree 108 for q=6) and p_g=36 of a Fano surface. Conclusion: the paper is not a source for anything about Kum_2 fourfolds in P^8."
+          },
+          {
+            "claim": "Fujiki relation for Kum_n-type: ∫α^{2n} = (2n−1)!!·(n+1)·q(α)^n, i.e. Fujiki constant (2n)!/(n! 2^n)·(n+1); for n=2 this is 9, so H^4 = 9 q(H)^2 and q(H)=2 gives degree 36. Also b_2 = 7 and H^2 = U^{⊕3} ⊕ <−2(n+1)>.",
+            "status": "verified-primary-source",
+            "source": "Rapagnetta, arXiv:math/0606409v1, p.2 table and Theorem 3.0.9 (p.~10); ABGR arXiv:2505.14490v2 p.7 (§2.3) and Prop. 7.14 proof p.33",
+            "detail": "Rapagnetta p.2 table row: 'K_n(T)  2n  7  (2n)!/(n!2^n) (n+1)  H^{⊕3} ⊕ (−2(n+1))'; Theorem 3.0.9 (attributed to [Be 83, Fu 87]): '∫_Y α^{2n} = c_Y B_Y(α,α)^n'. ABGR p.7: 'H^2(Kum_n(A),Z) ≅ μ_n(H^2(A,Z)) ⊕ Zδ ... q(μ_n(L),μ_n(M)) = (L·M), q(δ,δ) = −2(n+1), q(μ(L),δ) = 0 ... The Fujiki relation is then ∫_{Kum_n(A)} α^{2n} = (2n−1)!!·(n+1)·q(α,α)^n' (citing [KM18, Notation 5.13] = Kapfer–Menet, Algebr. Geom. 5 (2018)). ABGR p.33 (proof of Prop 7.14): '∫_{Kum_2(A)} D^4 = 9·q(D,D)^2 = 9·4 = 36'. Arithmetic check (computed): (2·2)!/(2!·2^2)·3 = 24/8·3 = 9; 3!!·3 = 9."
+          },
+          {
+            "claim": "Riemann–Roch for Kum_n-type: χ(L) = (n+1)·binom(q(L)/2 + n, n) with q the (primitive integral) Beauville–Bogomolov form; for n=2, q=2: χ(H) = 3·binom(3,2) = 9, hence h^0(H) = 9 for ample H (Kodaira vanishing) and |H| maps to P^8; χ(O_X) = 3.",
+            "status": "verified-primary-source",
+            "source": "Britze–Nieper, arXiv:math/0101062, Theorem 5.1 (p.18), Lemma 5.2 (p.19), eq. (6.3); ABGR arXiv:2505.14490 Remark 6.7 and Prop. 6.8 proof (p.25)",
+            "detail": "Britze–Nieper Thm 5.1 (p.18): 'Let L be a line bundle on K^nA. The Euler characteristics of L is given by χ(L) = (n+1) binom((n+1)/4 λ(L) + n, n)'. Lemma 5.2 (p.19): 'χ(K^nL) = (n+1) binom(c_1(L)^2/2 + n, n)', with the normalization 'q(K^nL) := c_1(L)^2' (p.18) and 'the theorem is proven if we show that q = (n+1)/2 λ' (p.19); this q agrees with the BB form of ABGR p.7 (q(μ_n(L)) = L^2). Abstract: 'χ(L) = (n+1) binom(q(c_1(L))/2 + n, n)'. Eq. (6.3): ∫ td(K^nA) = n+1 → χ(O)=3 for n=2. ABGR Remark 6.7 (p.25): 'q(D,D) = 8 − 6 = 2 ... In particular h^0(Kum_2(A),D) = 9'; Prop 6.8 proof: 'the two spaces have dimension 9 because of Riemann-Roch ([Deb22, Section 3.3],[BL04, Theorem 3.6.1])'. Computed: χ(tH) = 3·binom(t^2+2,2) = (3/2)t^4 + (9/2)t^2 + 3; values 9, 45, 165, 459 for t=1..4. Kodaira vanishing step (h^i(H)=0, i>0, for H ample on a variety with trivial canonical bundle) is standard and not separately sourced."
+          },
+          {
+            "claim": "For Jacobian Kummer fourfolds Kum_2(A), A = J(C), the q=2 line bundle μ_2(Θ) maps Kum_2(A) birationally onto its image in |3Θ| = P^8, contracting the exceptional divisor E and embedding the singular Kummer variety Σ_2(A) (Theorem A). Not an embedding of the smooth fourfold.",
+            "status": "verified-primary-source",
+            "source": "Agostini–Beri–Giovenzana–Ríos Ortiz, arXiv:2505.14490v2 (26 May 2025), Theorem A (p.2) = Theorem 4.1 (p.~15); Prop. 6.1 (p.21)",
+            "detail": "Theorem A verbatim: 'Let A be the Jacobian of an arbitrary smooth genus two curve. There is a well-defined morphism u : Σ_n(A) → |(n+1)Θ| = P(H^0(A,(n+1)Θ)); [a_0,...,a_n] ↦ Θ_{a_0} + ··· + Θ_{a_n} which is injective for all n and an embedding for n = 1, 2. The composition u∘HC : Kum_n(A) → |(n+1)Θ| coincides with the map φ_{μ_n(Θ)} induced by the complete linear system of μ_n(Θ). In particular, it is birational onto the image and it is a contraction of the divisor E ⊆ Kum_n(A) of non-reduced subschemes.' Prop 6.1 (p.21): 'If A is the Jacobian of a smooth genus two curve, then μ_2(Θ) and D are big and nef divisors on Kum_2(A). They are not ample.' Degree of the image Σ_2(A) ⊂ P^8: not stated explicitly by ABGR for this model; computed from Fujiki (birational map): μ_2(Θ)^4 = 9·(Θ^2)^2 = 9·4 = 36. Divisibility of μ_2(Θ) in H^2(Kum_2(A),Z): 1 (computed: Θ primitive in the unimodular H^2(A,Z))."
+          },
+          {
+            "claim": "For Jacobian Kummer fourfolds, the other q=2 class D = μ_2(2Θ) − δ maps Kum_2(A) → P̌^8 = |3Θ|^∨, contracting the divisor F ≅ P^1-bundle over A onto A ⊂ P̌^8 and embedding everywhere else; the image is a fourfold of degree 36 equal to Sing(Sec(A)); the two models are exchanged by the polar map of the Coble cubic (Coble duality).",
+            "status": "verified-primary-source",
+            "source": "ABGR arXiv:2505.14490v2, Theorem B (p.3); Theorem 6.10 (p.26); Prop. 7.14 (pp.32–33); Prop. 6.1 (p.21)",
+            "detail": "Theorem B verbatim: 'The two line bundles μ_2(Θ) and μ_2(2Θ)−δ on Kum_2(A) are globally generated, and there is a commutative diagram [Kum_2(A) → P̌^8 via φ_{μ_2(2Θ)−δ}, → P^8 via φ_{μ_2(Θ)}, D: P̌^8 ⇢ P^8] ... φ_{μ_2(2Θ)−δ}({a,b,c}) = ℓ(Θ_a) ∩ ℓ(Θ_b) ∩ ℓ(Θ_c), φ_{μ_2(Θ)}({a,b,c}) = Θ_a + Θ_b + Θ_c ... The map φ_{μ_2(2Θ)−δ} contracts the divisor F onto A ⊆ P̌^8 and is an embedding everywhere else. The image of φ_{μ_2(2Θ)−δ} is a fourfold of degree 36 and it is the singular locus of the secant variety Sec(A) ⊆ P̌^8.' p.3: 'if A has Picard rank one then the two line bundles μ_2(Θ), μ_2(2Θ)−δ are the generators of the nef and movable cone of Kum_2(A) [Mor21, Theorem 0.1]'. Prop 7.14 (p.32): 'The image N = φ_D(Kum_2(A)) is the singular locus of Sec(A). It is a fourfold of degree 36.' Thm 6.10 (p.26): 'D∘φ_D ... 2D − F ∼ μ_2(Θ)' where D = [∂F/∂X_0,...,∂F/∂X_8] is the polar map of the Coble cubic C_3 = Z(F), the unique cubic in P̌^8 singular exactly along A (p.2). Divisibility of D: 2 (computed: (D,x) = 2(Θ,x) for x∈H^2(A), (D,δ) = 6). So the two degree-36 models lie in different polarized moduli spaces M^{2,1} and M^{2,2}, both quasi-polarized (non-ample) points."
+          },
+          {
+            "claim": "Equations of the degree-36 fourfold in P^8: the Sing(Sec(A)) model is not contained in any quadric; no explicit equations (in particular no statement that it is cut out by 36 quartics, nor any value of h^0(I(4))) are given in the literature found; producing explicit equations is listed as an open direction.",
+            "status": "verified-primary-source",
+            "source": "ABGR arXiv:2505.14490v2, Lemma 6.9 (p.25), proof p.26; §9 'Further directions' p.37",
+            "detail": "Lemma 6.9: 'The image N = φ_D(Kum_2(A)) is not contained in any quadric.' Proof uses that H^0(P̌^8, I_A(2)) is an irreducible Heisenberg representation [BL04, §10.7] and that A is cut out by quadrics. §9 p.37: 'it would also be interesting to recast the results of Theorem A and Theorem B through the classical language of theta functions ... This could also give a way to produce explicit equations for the images φ_{μ_2(Θ)}(Kum_2(A)) ⊆ P^8 and φ_{μ_2(2Θ)−δ}(Kum_2(A)) ⊆ P̌^8. Another way to obtain explicit equation might also be through the point of view of [BMT21].' Grep of ABGR for 'quartic': all hits concern Kummer quartic surfaces. BMT arXiv:1904.10848 gives no equations in P^8 (Kum_2(A) realized as a zero locus in the flag variety F(1,3,6,V_9), Theorem 5.1) and '36' does not occur there."
+          },
+          {
+            "claim": "Dimension count for quartics (my computation, not in the literature): for a smooth Kum_2-type X ⊂ P^8 with q(H)=2 and h^i(kH)=0, binom(k+8,8) − χ(kH) = 0, 0, 0, 36, 234 for k = 1..5; hence h^0(I_X(4)) ≥ 36 with equality iff the degree-4 restriction map is surjective, and X lies on no quadric or cubic iff the corresponding restriction maps are injective (no information from the count alone).",
+            "status": "computed",
+            "source": "Computed from χ(tH) = 3·binom(t^2+2,2) (Britze–Nieper Thm 5.1/Lemma 5.2) and binom(k+8,8)",
+            "detail": "h^0(O_{P^8}(k)) = 9, 45, 165, 495, 1287 versus χ(kH) = 9, 45, 165, 459, 1053 for k = 1..5. The '36 quartics' figure in the task statement is exactly this dimension-count deficit at k = 4; no source found asserts h^0(I_X(4)) = 36 or that X is cut out by quartics."
+          },
+          {
+            "claim": "Heisenberg symmetry of level 3 on P^8 is used: the theta group of a q=2, big-and-nef primitive line bundle on Kum_2(A) is the Heisenberg group H(3,3), H^0 is its 9-dimensional Schrödinger representation, and A[3] ≅ (Z/3)^4 acts on the P̌^8-model by translations, matching the classical H(3,3)-action on H^0(A,3Θ).",
+            "status": "verified-primary-source",
+            "source": "ABGR arXiv:2505.14490v2 Theorem 2.5 (p.7, quoting O'Grady), Remark 6.7 and Prop. 6.8 (p.25); O'Grady arXiv:2204.09582v2 Theorem 1.1 (p.2), Theorem 3.2 and Remark 3.3 (p.8); published as [O'G25] Progress in Math. 352 (2025) 57–70",
+            "detail": "ABGR Theorem 2.5 [O'G25, Theorem 3.2]: 'Let L be a big and nef primitive line bundle on Kum_n(A) of the form L = μ_n(L) + b·δ, with b ∈ Z and L ∈ Pic(A) of type (d_1,d_2), such that both d_1,d_2 are coprime with n+1. (1) The theta group G_{Kum_n(A)} is isomorphic to the Heisenberg group H(n+1,n+1). (2) The space H^0(Kum_n(A), L) decomposes into copies of the Schrödinger representation. In particular, it is the Schrödinger representation if and only if q(L,L) = 2.' Remark 6.7: 'the theta group G_{Kum_2}(D) is isomorphic to the Heisenberg group H(3,3) and ... H^0(Kum_2(A),D) is the Schrödinger representation of this group. In particular h^0(Kum_2(A),D) = 9. This representation appears also as the group of global sections H^0(A,3Θ).' Prop 6.8: 'There is a natural isomorphism of H(3,3)-representations H^0(Kum_2(A),D) ≅ H^0(A,3Θ)'; proof: '0 → C* → H(3,3) → A[3] → 0 ... A[3] acts on φ_{3Θ}(A) ⊆ |3Θ|^∨ as translations [Mum66, Proposition 3, pag. 295]'. O'Grady Theorem 1.1 (p.2): 'Let X be a 2n dimensional HK manifold of Kummer type, and let L be a primitive line bundle on X. The theta group of L is a Heisenberg group if and only if ... (1) div(L) = 2 and n is even, or div(L) = 1 ...; (2) gcd{n+1, q_X(L)/2} = 1.' Note: the group acting projectively is A[3] ≅ (Z/3)^4 of order 81 (H(3,3) mod scalars), i.e. the level-3 Heisenberg group of an abelian SURFACE, not the order-27 Heisenberg group of P^2."
+          },
+          {
+            "claim": "Benedetti–Manivel–Tanturri realize Kum_2(A) (A a (3,3)-polarized abelian surface / Coble cubic setting) as a zero locus in a flag variety of V_9, not as a subvariety of P^8; the construction uses the trivector ω ∈ Λ^3 V_9 and the Heisenberg/θ-representation setting, but gives no degree-36 model or equations.",
+            "status": "verified-primary-source",
+            "source": "Benedetti–Manivel–Tanturri, arXiv:1904.10848v2, Math. Ann. 379 (2021) 415–440; Theorem 5.1, Theorem 5.11, Theorem 5.14 (§5)",
+            "detail": "Abstract: 'we show how the Hilbert scheme of pairs of points on an abelian surface, and also its Kummer fourfold, a very remarkable hyper-Kähler manifold, can very naturally be constructed in this context [alternating trivectors in nine variables]'. Theorem 5.1: 'Z is isomorphic to the generalized Kummer fourfold Kum_2(A)' (Z a zero locus over F(1,3,6,V_9)); Theorem 5.11: 'X is isomorphic to the nested Kummer fourfold Kum_{2,3}(A)'; Theorem 5.14: 'T is isomorphic to Hilb^2(A)'. p.~4: 'By varying ω, one gets a locally complete family of (3,3)-polarized' abelian surfaces. BNWS (arXiv:2505.14444 p.2) comment: 'their construction does not deform'. ABGR p.2: 'the case of n = 2 has been already treated by [BMT21] from the point of view of representation theory.'"
+          },
+          {
+            "claim": "No paper found proves that the GENERAL Kum_2-type fourfold with a q=2 polarization is embedded in P^8 by |H|; extension of the Jacobian results to the complete 4-dimensional family is explicitly posed as an open problem, and no locally complete family of polarized Kummer-type fourfolds of dimension >2 was described in the literature found (Bayer–Perry–Pertusi–Zhao cited as forthcoming, not located on arXiv).",
+            "status": "not-found",
+            "source": "ABGR arXiv:2505.14490v2 p.1 (incl. footnote 1) and §9 p.36; BNWS arXiv:2505.14444v2 p.2; O'Grady arXiv:2204.09582 abstract; web searches (arXiv) for BPPZ",
+            "detail": "ABGR p.1: 'to the best of our knowledge, there is yet no description of a complete family for varieties of Kummer type of dimension larger than two'; footnote 1: 'A forthcoming work by Bayer-Perry-Pertusi-Zhao provides a construction of locally complete families of polarized generalized Kummer varieties in arbitrary dimension, by describing all such families arising from moduli spaces of stable objects on noncommutative abelian surfaces [BPPZ25].' §9 p.36: 'A first natural question would be to extend the results in Theorem A or Theorem B to a complete family of varieties of Kummer type. For example, it is natural to ask whether the Coble cubic or the Coble sextic deform along a complete four-dimensional family.' BNWS p.2: 'Our second objective, which is still work in progress, will then be to understand how this construction may deform.' O'Grady abstract: 'motivated by the quest for an explicit description of locally complete families of polarized varieties of Kummer (or OG6) type.' Web search (arxiv.org-restricted) found no posted BPPZ paper as of 2026-09-10; only secondary mentions (Zhao's website, overview arXiv:2602.24016)."
+          },
+          {
+            "claim": "Degenerations of q=2 Kum_2-type fourfolds to unions of P^4's or to Stanley–Reisner schemes: no statement found in any of the primary sources examined.",
+            "status": "not-found",
+            "source": "Full-text greps of arXiv:1603.00403, 2505.14490, 2505.14444, 1904.10848, 2606.10884, 2204.09582 for 'Stanley', 'Reisner', 'linear spaces', 'degenerat', 'union'",
+            "detail": "IKKR's 13 'degenerat' hits all concern degenerate EPW cubes/sextics. ABGR, BNWS, BMT, O'Grady: zero hits for Stanley–Reisner or unions of linear spaces. Piroddi–Ríos Ortiz–Rojas–Song arXiv:2606.10884 (9 Jun 2026) concerns Coble-type hypersurfaces for K3^[2]-type fourfolds of squares 4 and 6, divisibility 1 (20-dimensional families), not Kum_2."
+          },
+          {
+            "claim": "Chapoton–Manivel (the source of the run's facet list) connect the 9-vertex triangulation of CP^2 to the Severi variety P^2×P^2 ⊂ P^8 via representation theory and conjecture a degeneration of a complex L• to the face complex L•_Δ; the number 36 appears there as dim S_{311}A ⊗ S_{311}B = number of facets, not as the degree of a hyperkähler fourfold; the paper has no Kummer/hyperkähler content.",
+            "status": "verified-primary-source",
+            "source": "Chapoton–Manivel, 'Triangulations and Severi varieties', arXiv:1109.6490v1, Experimental Math. 22 (2013) 60–73; §4.2 'The main conjecture' (p.11), Prop. 6 (p.12), §5 (p.13)",
+            "detail": "§4.2 p.11: Stanley–Reisner ring defined; 'If Δ is a triangulation of a topological manifold (not necessarily a sphere), then R is only Buchsbaum [NS09]'; 'Conjecture. There exists a degeneration of L• to L•_Δ, for some triangulation Δ of AP^2_C with 3a+3 vertices. More precisely, such a degeneration should exist inside the Koszul complex of J_3(A_C)'. Prop. 6: conjecture true for a = 1 (RP^2, Veronese surface). §5 p.13: list of the 36 maximal faces of the Brehm–Kühnel 9-vertex CP^2; 'The symmetry group G of this triangulation has order 54 and acts transitively on the vertices ... (147)(258)(369) and (123)(456)(789) generate a subgroup H ... isomorphic with Z3 × Z3 ... acts simply transitively on the vertices. Note also that H has index two in its normalizer N_G(H), which is generated by H and the involution τ = (12)(46)(89).' 'On the extreme right, L^5 = S_{311}A ⊗ S_{311}B = S^2A ⊗ det A ⊗ S^2B ⊗ det B has dimension 36.' Grep: 'Kummer' 0 hits, 'hyper' 0 hits, 'Heisenberg' 0 hits."
+          },
+          {
+            "claim": "The Stanley–Reisner scheme of the 36-facet 9-vertex triangulation of CP^2 (union of 36 coordinate P^4's in P^8) has the same Hilbert polynomial as a Kum_2-type fourfold with q(H)=2, and its ideal is generated by exactly 36 square-free quartics with no quadric or cubic generators.",
+            "status": "computed",
+            "source": "Computed (Python) from /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt; compared with χ(tH) from Britze–Nieper Thm 5.1",
+            "detail": "36 distinct facets, all of size 5, on vertices 1..9. f-vector (f_0..f_4) = (9, 36, 84, 90, 36); Euler characteristic 3 (= χ(CP^2)); h-vector (1,4,10,20,−1,2) (non-Cohen–Macaulay, consistent with CM's Buchsbaum remark). Hilbert function H_SR(t) = Σ f_{i−1} binom(t−1,i−1) = 9, 45, 165, 459, 1053, 2109, 3825, 6435 for t = 1..8, equal to 3·binom(t^2+2,2) at every t; symbolically P_SR(t) = (3/2)t^4 + (9/2)t^2 + 3 ≡ 3·binom(t^2+2,2) (sympy: identical), and P_SR(0) = 3 = χ(Δ) = χ(O_X) for Kum_2-type. Degree 36 = number of facets = 9·2^2. Minimal non-faces: exactly 36 four-element subsets (all 84 triples are faces; binom(9,4) − 90 = 36), no minimal non-faces of size 5 or 6; hence h^0(I_Δ(4)) = 495 − 459 = 36 and h^0(I_Δ(k)) = 0 for k ≤ 3, matching the Kum_2 dimension count. This is a necessary-condition consistency check only; no source asserts that this scheme is a degeneration of a Kum_2-type fourfold."
+          },
+          {
+            "claim": "Structure of the order-54 automorphism group of the triangulation and its relation to a level-3 Heisenberg action: Aut(Δ) ≅ (Z/3)^2 ⋊ S_3 ⊂ AGL_2(F_3), with the translation subgroup H = <(147)(258)(369),(123)(456)(789)> NORMAL (N_G(H) = G, contradicting Chapoton–Manivel's remark that H has index two in its normalizer); the Sylow-3 subgroup (order 27) is the non-abelian Heisenberg group of exponent 3; the inversion −1 of (Z/3)^2 is not an automorphism; SR(Δ) is invariant under the finite level-3 Heisenberg group acting on P^8 = P(C^{(Z/3)^2}) (translations = H, characters = diagonal scalings), whose image in PGL_9 is (Z/3)^4.",
+            "status": "computed",
+            "source": "Computed (Python) from data/group_Aut54.txt and the facet file; brute-force over S_9",
+            "detail": "Brute force over all 9! permutations: exactly 54 preserve the facet set, coinciding with the 54 permutations in group_Aut54.txt (closed under composition). Element orders: 1×1, 9×2, 26×3, 18×6. Unique (normal) Sylow-3 subgroup P of order 27, non-abelian, centre of order 3, exponent 3 ⇒ P ≅ Heisenberg group of order 27. H = <h1,h2> has order 9, acts regularly on vertices, is contained in P, and is normal in G (checked with both conjugation conventions); G/H is non-abelian of order 6 (S_3); Z(G) trivial; <H,τ> has order 18 as CM state, but it is not N_G(H) = G. Labelling vertex h1^a h2^b(1) by (a,b) ∈ (Z/3)^2, exactly 54 affine maps of (Z/3)^2 preserve Δ, with linear parts {[[1,0],[c,d]] : c ∈ F_3, d ∈ {1,2}}; the map (a,b) ↦ (−a,−b) does not preserve Δ. Since every coordinate linear subspace is invariant under all diagonal scalings, and coordinate translations by (Z/3)^2 lie in Aut(Δ), the SR scheme is invariant under the standard finite Heisenberg group of level 3 on P^8 (order 3^5, image (Z/3)^4 in PGL_9). This abstract group agrees with A[3] ≅ (Z/3)^4 acting on ABGR's models (Prop. 6.8), but no identification of coordinates between the two settings is established here or in the literature."
+          },
+          {
+            "claim": "The moduli space of polarized Kum_2-type (indeed Kum_n-type) fourfolds of fixed degree d and divisibility γ is 4-dimensional (b_2 = 7), versus 3 for families coming from polarized abelian surfaces; Jacobian Kummer fourfolds form a codimension-1 family; the q=2, divisibility-2 space M^{2,2}_{Kum_2} is rational, and every family of (2,2)-polarized Kum_2-type fourfolds over a projective base is isotrivial.",
+            "status": "verified-primary-source",
+            "source": "BNWS arXiv:2505.14444v2, p.2 and Appendix A.3 (p.28); Barros–Beri–Flapan–Williams arXiv:2407.07622, abstract and p.28 (Theorem 4.8 and following remark); Rapagnetta math/0606409 p.2 (b_2 = 7)",
+            "detail": "BNWS p.28 (A.3): 'The moduli spaces M^{d,γ}_{Kum_n}: they parametrise polarised IHS manifolds of Kummer type, i.e. deformation equivalent to the n-th generalised Kummer variety of an abelian surface, with n ≥ 2, of degree d and divisibility γ. Their dimension is 4, whereas the families of polarised abelian surfaces have dimension 3. By Dawes [13, Theorem 3.6] we know that M^{2d,1}_{Kum2} is of general type if d ≫ 0. ... M^{2,1}_{Kum_n} is uniruled if n ≥ 15 or n = 17, 20 ... M^{2,2}_{Kum_2} is rational (see [52, Theorem 5.4] and [3, Theorem 7.6]).' ([52] = Wang–Williams, Algebr. Geom. 11 (2024); [3] = Barros–Beri–Flapan–Williams arXiv:2407.07622; [13] = Dawes arXiv:2405.15675.) BNWS p.2: 'the four-dimensional moduli spaces M^{d,γ}_{Kum2} that feature in this paper'; 'study the codimension 1 family of generalised Kummer fourfolds over Jacobians of a genus two curve ... products of elliptic curves, which will give a codimension 2 family.' BBFW p.28: 'the modular variety M^2_{Kum_2,2} = D/Õ^+(Λ_h), where Λ_h = U^{⊕2} ⊕ A_2(−1), is known to be rational [WW24, Theorem 5.4]'; BBFW abstract: 'any family of polarized Kum_2-type hyperkähler manifolds with divisibility 2 and polarization degree 2 over a projective base is isotrivial.' (BNWS's own polarization is a different one, of degree 12 and divisibility 3, per their abstract/WebFetch summary; not the q=2 class.)"
+          },
+          {
+            "claim": "Dimension of the image in the Hilbert scheme of P^8: 4 + dim PGL_9 = 4 + 80 = 84, valid if the general q=2 Kum_2-type fourfold is embedded (or at least mapped birationally with finitely many (X,H) per image) and Aut(X,H) is finite.",
+            "status": "computed",
+            "source": "Arithmetic from the verified moduli dimension 4 (BNWS App. A.3) and dim PGL_9 = 9^2 − 1 = 80; finiteness of Aut(X,H) for polarized hyperkähler manifolds is standard (recalled, not verified from a primary source here); the generic-embedding hypothesis is unproven in the literature found",
+            "detail": "No source among those examined states the number 84 or discusses the Hilbert-scheme component. Caveat: there are two different 4-dimensional q=2 moduli spaces (divisibility 1 and 2), each would give an 84-dimensional locus if its general member is embedded by |H|; for the known Jacobian examples the q=2 classes are only big and nef (ABGR Prop 6.1), so the P^8 images there are singular models (Σ_2(A) resp. Sing(Sec(A))), each of degree 36."
+          },
+          {
+            "claim": "Boissière–Nieper-Wißkirchen–Sankaran's model of Kum_2(J(C)) is a birational model with a degree-15 finite cover of P^4 branched along the degree-14 dual variety of C; no P^8 or degree-36 content.",
+            "status": "verified-primary-source",
+            "source": "BNWS arXiv:2505.14444v2 (21 May 2025), abstract and Theorem 1.1 (Corollary 5.2), Propositions 1.2–1.4 (via WebFetch of arXiv HTML; PDF text confirmed abstract and Appendix A)",
+            "detail": "Abstract: 'We construct a birational model of the generalised Kummer fourfold of the Jacobian of a genus two curve, based on a geometric interpretation of the addition law on this Jacobian, obtained by the properties of the linear system of cubics on that curve. We show that our model has mild singularities and that it admits a finite ramified covering to the four-dimensional projective space.' Theorem 1.1 (per HTML summary): the dual variety C* ⊂ P^4 is an irreducible hypersurface of degree 14 and Kum^2(Jac(C)) is birational to a degree-15 covering of P^4 branched along C*. Grep of the PDF text for 'P^8', '36', 'Heisenberg', 'Coble' in the body: no relevant hits."
+          }
+        ]
+      },
+      "verification": null
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Research"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Verify"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "research:ikkr",
+      "phaseIndex": 1,
+      "phaseTitle": "Research",
+      "agentId": "ad05e6fd7512dd2b4",
+      "model": "claude-fable-5-1",
+      "state": "done",
+      "startedAt": 1789061271078,
+      "queuedAt": 1789061269410,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Primary-literature check on generalized Kummer (Kum_2-type)…",
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062364328,
+      "tokens": 166872,
+      "toolCalls": 55,
+      "durationMs": 1089268,
+      "resultPreview": "{\"summary\":\"Primary-literature check on generalized Kummer (Kum_2-type) fourfolds in P^8. Headline: the task's premise about IKKR is wrong — arXiv:1603.00403 (Iliev–Kapustka–Kapustka–Ranestad, \\\"Hyperkähler fourfolds and Kummer surfaces\\\", Proc. LMS; v2 12 Aug 2017) is entirely about K3^[2]-type fourfolds (q=4, degree 48, Verra fourfolds, EPW cubes) and Kummer QUARTIC SURFACES; it contains no stat…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "research:kuhnel",
+      "phaseIndex": 1,
+      "phaseTitle": "Research",
+      "agentId": "a5ffa69d5b91be6fa",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1789061270974,
+      "queuedAt": 1789061269413,
+      "attempt": 1,
+      "lastToolName": "WebSearch",
+      "lastToolSummary": "\"The unique 3-neighborly 4-manifold with few vertices\" Kühn…",
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062806836,
+      "error": "You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+      "tokens": 114323,
+      "toolCalls": 56,
+      "durationMs": 1535857
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "research:lattice",
+      "phaseIndex": 1,
+      "phaseTitle": "Research",
+      "agentId": "a88fa09c88eb3c0ac",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1789062368042,
+      "queuedAt": 1789061269413,
+      "attempt": 1,
+      "lastToolName": "WebSearch",
+      "lastToolSummary": "Kapfer Menet \"Integral cohomology of the generalized Kummer…",
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062832299,
+      "error": "You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+      "tokens": 98922,
+      "toolCalls": 40,
+      "durationMs": 464254
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "research:recheck",
+      "phaseIndex": 1,
+      "phaseTitle": "Research",
+      "agentId": "a39739ff3fe0638e3",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1789062808436,
+      "queuedAt": 1789061269413,
+      "attempt": 1,
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062809454,
+      "error": "You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 1015
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "research:depth",
+      "phaseIndex": 1,
+      "phaseTitle": "Research",
+      "agentId": "a5d42919c9c375871",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1789062811856,
+      "queuedAt": 1789061269413,
+      "attempt": 1,
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062812722,
+      "error": "You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 864
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "verify:ikkr",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "aee460c9c8c8e3100",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1789062814422,
+      "queuedAt": 1789062366318,
+      "attempt": 1,
+      "promptPreview": "Work directory (read-only for you, do NOT modify anything there or elsewhere in the repository): /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10. Facet list: /Users/daniel/github/grunbaum-cy-geography-zero-context/runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt (36 facets of the 9-vertex tr…",
+      "promptFramed": false,
+      "lastProgressAt": 1789062815550,
+      "error": "You've hit your session limit · resets 7:20pm (America/Sao_Paulo)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 1127
+    }
+  ],
+  "totalTokens": 380117,
+  "totalToolCalls": 151
+}

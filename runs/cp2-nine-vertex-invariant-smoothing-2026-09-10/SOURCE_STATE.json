@@ -1,0 +1,35 @@
+{
+ "run": "cp2-nine-vertex-invariant-smoothing-2026-09-10",
+ "started_local": "2026-09-10T10:30:00-03:00",
+ "started_utc": "2026-09-10T13:44:36Z",
+ "workspace_repo": "grunbaum-cy-geography-zero-context",
+ "workspace_head_at_start": "30dd90dbdb69e14b1f52b2db70ca451d9281eda9",
+ "workspace_status_at_start": [
+  "?? runs/astra-all-nighter-2026-09-08/BUDGET_STATE.json",
+  "?? runs/astra-all-nighter-2026-09-08/logs/environment.json",
+  "?? runs/astra-computation-2026-09-08/data/padic_relative_degree_pi56/",
+  "?? runs/astra-computation-2026-09-08/data/peeled_sixjet_p101_polynomial.json",
+  "?? runs/astra-computation-2026-09-08/data/peeled_sixjet_p101_polynomial.sing",
+  "?? runs/astra-computation-2026-09-08/logs/20260908T131634-ramified-point-pi56-height.artifacts/",
+  "?? runs/astra-daytime-2026-09-08/artifacts/"
+ ],
+ "historical_run_read_only": "runs/cp2-nine-vertex-equivariant-t2-2026-09-09 (inputs copied, never written)",
+ "reference_repo": "../grunbaum-zero-context-proof",
+ "reference_repo_head": "ee984e9541e9cb9259728e6dc7b3a1bc0fda8a9b",
+ "reference_repo_status": "clean",
+ "heap_project_head": "08a71077eec778a45a0d31718e90e36913753ffd",
+ "heap_project_status": "clean",
+ "software": {
+  "Macaulay2": "1.20",
+  "Singular": "4.4.1",
+  "python3": "3.11.4",
+  "sympy": "1.14.0",
+  "numpy": "1.26.4",
+  "sage": "SageMath version 10.7, Release Date: 2025-08-09",
+  "platform": "macOS-12.7.6-x86_64-i386-64bit",
+  "cpus": 4,
+  "ram_bytes": 8589934592
+ },
+ "budget": "4 h wall clock from 10:30 -03; checkpoints every 30 min",
+ "commit_or_push": "none (not requested)"
+}

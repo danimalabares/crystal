@@ -1,0 +1,32 @@
+$ python3 -B computations/cp29-normal-sections/check.py
+(self-contained; reads input/minimal_nonfaces.json, writes fresh/exact-check.json and
+fresh/tangent-basis.json). Ran from /Users/daniel/dr/crystal (the actual imported checkout;
+fresh/ is designed to be overwritten and was verified byte-identical to the pre-run committed
+copy afterward). Exit 0. Final JSON (tail):
+  "hilbert_polynomial_coefficients_ascending": [
+    "3",
+    "0",
+    "9/2",
+    "0",
+    "3/2"
+  ],
+  "hilbert_function_degrees_0_through_8": [
+    1,
+    9,
+    45,
+    165,
+    459,
+    1053,
+    2109,
+    3825,
+    6435
+  ],
+  "Kummer_q": 2,
+  "Kummer_h0_H": 9,
+  "Kummer_polarized_dimension": 4,
+  "PGL9_dimension": 80,
+  "smooth_Kummer_Hilbert_dimension_if_nonempty": 84,
+  "tangent_minus_required_dimension": 9
+}
+
+Post-run byte-identity check of all 73 tracked-manifest files (including fresh/*): 0 changed.

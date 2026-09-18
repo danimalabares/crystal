@@ -1,8 +1,8 @@
 # Status
 
-Updated 2026-09-18. This is a setup and migration record, not a new mathematical
-audit. All research conclusions below are attributed to the imported reports.
-See [MIGRATION.md](MIGRATION.md) for the exact source commit and setup checks.
+Updated 2026-09-18 (second migration batch). This is a setup and migration record, not a
+new mathematical audit. All research conclusions below are attributed to the imported
+reports. See [MIGRATION.md](MIGRATION.md) for the exact source commits and setup checks.
 
 ## Priorities
 
@@ -13,8 +13,9 @@ See [MIGRATION.md](MIGRATION.md) for the exact source commit and setup checks.
 3. Specify and check the proposed generalized Kummer fourfold degeneration and
    the claimed connection to Stanley–Reisner schemes.
 4. Keep the 21 affine space-group cases, the unresolved crystallographic case,
-   and the wallpaper classification as scoped follow-up tasks. No deadlines or
-   additional computations are imposed by this list.
+   the wallpaper classification, and the unfinished CP²₉ chart-smoothness certificate
+   as scoped follow-up tasks. No deadlines or additional computations are imposed by
+   this list.
 
 ## Branches
 
@@ -22,6 +23,7 @@ See [MIGRATION.md](MIGRATION.md) for the exact source commit and setup checks.
 | --- | --- | --- | --- |
 | Crystallographic links | [REPORT.md](computations/crystallographic-links/REPORT.md), scripts and outputs report four `(m,1)_0` constructions, `m=2,3,4,6`, yielding the same ten-vertex triangulation; `(3,3)_0` identifies the nine-vertex triangulation | Compatible triangulation for `(4,2)_1`; smoothability and Hodge numbers of the two new link schemes | Awaiting adaptation to the Dani requirement; no claim of confirmed understanding |
 | Space-group threefolds | [REPORT.md](computations/space-group-cy3/REPORT.md) records 14 linear literature matches and matching computed Hodge numbers; [table](computations/space-group-cy3/table/space_groups_35.tsv) lists all 35 | Three review flags; 21 affine identifications and computations pending; deformation equivalences unresolved | Awaiting adaptation to the Dani requirement; no claim of confirmed understanding |
+| CP²₉ nine-vertex triangulation | [cp29-normal-sections](computations/cp29-normal-sections/README.md) and [the equivariant T¹/T² run](runs/cp2-nine-vertex-equivariant-t2-2026-09-09/RESULTS.md) report `dim Hom_S(I,A)_0 = 93`, `dim (T²_A)_0 = 126`, `Aut(Δ)`-invariant obstructions `0`; the [invariant-smoothing follow-up](runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/RESULTS.md) reports the `H`-fixed Hilbert-scheme locus smooth of dimension 5 with an explicit two-parameter family through order 6 | Chart-smoothness certificate unfinished (killed after 17h); no fibre shown smooth or singular; relation to the crystallographic-links branch's `CP²₉` link not reconciled; see [KAPUSTKA_QUESTIONS.md](runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/KAPUSTKA_QUESTIONS.md) | Awaiting adaptation to the Dani requirement; no claim of confirmed understanding |
 | Fourfold degeneration | Research objective; [reading leads](SOURCES.md) | Exact construction, extension to the singular fibre, and connection to the SR scheme need proof | Learning and formulation stage |
 | Wallpaper surfaces | Supporting direction from two-dimensional crystallography | No complete, checked 17-row classification in this repository | Learning stage |
 

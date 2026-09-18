@@ -1,0 +1,17 @@
+parsed F_0..F_6 (1x36) and R_0..R_6 (36x90)
+CHECK|F0_R0_zero_and_90_independent_relations|True
+CHECK|FR_lowest_surviving_t_order|7 (must exceed 6)
+CHECK|FR_zero_mod_t^7|True
+  invariance checked for 9 group elements
+  invariance checked for 18 group elements
+  invariance checked for 27 group elements
+  invariance checked for 36 group elements
+  invariance checked for 45 group elements
+  invariance checked for 54 group elements
+CHECK|all_F_k_exactly_invariant|True
+CHECK|all_R_k_exactly_invariant|True
+CHECK|denominators_only_2_and_3|True  (max denominator 76527504)
+CHECK|F1_R0_zero_mod_I|True
+F_1 nonzero entries: 36; F_k nonzero entries for k=2..6: [36, 9, 9, 9, 9]
+R_k nonzero entries for k=1..6: [189, 0, 54, 81, 0, 54]
+VERIFY_LIFT_STATE_DONE

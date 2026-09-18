@@ -1,0 +1,363 @@
+{
+ "source_commit": null,
+ "note": "This directory was never committed to the source repository (untracked local work); no git blob provenance exists. Bytes and sha256 are of the local files as found on the source Mac checkout on 2026-09-18, immediately before migration.",
+ "source_repo": "danimalabares/grunbaum-cy-geography-zero-context",
+ "source_workspace_head_at_run_start": "30dd90dbdb69e14b1f52b2db70ca451d9281eda9",
+ "imported_paths": [
+  "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10"
+ ],
+ "file_count": 50,
+ "total_bytes": 467362,
+ "files": [
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/CHECKPOINT.md",
+   "bytes": 2005,
+   "sha256": "04d5eea3ff1238c41017561a51ddb0bafb14e406855b392b1bd30c6ab34b9543",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/DANI_EXPLANATION.md",
+   "bytes": 10137,
+   "sha256": "1bbf0545cae70511904febb3917804c3313974129ae7a1e95375497b614477d7",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/HASH_MANIFEST.json",
+   "bytes": 5009,
+   "sha256": "a8ff01a4c52fa5abb3241480cfa1c0c3948d698a005c5bd2ff6e2f642d1a0b81",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/KAPUSTKA_QUESTIONS.md",
+   "bytes": 3380,
+   "sha256": "374df62d36dc9477fdc4739751f54cc0bc55bb2303dcb826dd16cf297492050e",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/REPRODUCE.md",
+   "bytes": 3588,
+   "sha256": "f6e1f938e1cf43bbc3926e5850dfaf36e07f422a7b4ba4b66b7ab8cac346fdbc",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/RESULTS.md",
+   "bytes": 8289,
+   "sha256": "e1cc85c4a23504293c2c0904e6d877f84d1acfcc3dba1620baeee3602dea97cb",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/SOURCE_STATE.json",
+   "bytes": 1580,
+   "sha256": "912273aa9561e40525f85b08812cdeb5d3ee1403b307651a4208069317e3e4a4",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/characters.json",
+   "bytes": 2896,
+   "sha256": "667d491f87f00c5fda74134ad415e4559bbc8e32458af68718ef110ca6a47d46",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift2_state_order2.m2.txt",
+   "bytes": 39619,
+   "sha256": "95faf642665b5a6ae27aa26bf413f8240c02041b86f6dee5f6cadb745cefc3ce",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift2_tangents.m2.txt",
+   "bytes": 39944,
+   "sha256": "9d378ea9b9357fdd312bad0a4ef166c616fa2287196450de1f49e218ae73ba1c",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift4_state_order4.m2.txt",
+   "bytes": 66278,
+   "sha256": "dcf42e9ec60e5438b6a9703ac16af249c7072211cf56f581fb6983d2a6be025c",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift4_tangents.m2.txt",
+   "bytes": 39944,
+   "sha256": "9d378ea9b9357fdd312bad0a4ef166c616fa2287196450de1f49e218ae73ba1c",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift6_state_order6.m2.txt",
+   "bytes": 91317,
+   "sha256": "01e1c8159891e832cc7c803a8bfddaca05cddac4995008c36c68ee17aa827c5e",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/lift6_tangents.m2.txt",
+   "bytes": 39944,
+   "sha256": "9d378ea9b9357fdd312bad0a4ef166c616fa2287196450de1f49e218ae73ba1c",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/certificates/vertex_link_vs_packet_sphere.json",
+   "bytes": 1812,
+   "sha256": "a302a8b5a0a7255e239b3eba26c53f59a124f818a59b667b9eb628b9d6328f59",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/facets_chapoton_manivel_1109.6490v1.txt",
+   "bytes": 554,
+   "sha256": "659074d085c4f8cfd99ae9c4ff31e4e24d15c53c7b2cd795a6f0554fb19be3a1",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/generators.m2.txt",
+   "bytes": 586,
+   "sha256": "bbf48ce88c773ec71a665e0a29cda97e6aeb095eca7e6dd82964276d1c3de15c",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/group_Aut54.txt",
+   "bytes": 1017,
+   "sha256": "c5bc724d8252d3bc7685be27c3ad47765b8b826aafbb2c565e66368a8cf14cb3",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/minimal_nonfaces.json",
+   "bytes": 2611,
+   "sha256": "979aee6fd259264199578a039eaca13495caaa1e93c100c36eb8c753f5c15a95",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/data/orbitals_Aut54.txt",
+   "bytes": 421,
+   "sha256": "86338bcfa6e358a16209ccef568cd3a250f9f6d18d1514ead6042a58b6e7d864",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/00_historical_verify_certificate_Aut54.rerun.log",
+   "bytes": 497,
+   "sha256": "89dec8640d117ab60b3fd5b5faa4d7c80f67be6214adb64be871642740f7ce3e",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/00_historical_verify_input.rerun.log",
+   "bytes": 351,
+   "sha256": "89d911e25655c6d2d8490e2b99efa58ae44bb60ecf341e629b9b2aac87cf1dd0",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/characters.log",
+   "bytes": 1904,
+   "sha256": "27a2219d29510187faf38fc24123f9d3507b4c98a785a79fcc99b16fa55148a7",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/chart_certificate_N4_c1_p32003.log",
+   "bytes": 57,
+   "sha256": "904045ace4cdd4926af7efd21e10220baf7cba50a1a57a0a692cff657662598e",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/class_characters_T1_T2.log",
+   "bytes": 698,
+   "sha256": "d95eac6cfe04deb83966d632b498af953dd549c5d7c38e51142f69d7201c1ead",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/cubic_factor_structure.log",
+   "bytes": 5216,
+   "sha256": "9536c010a116609f762679f61c0e259369870c51c5146809d818917c34a659f5",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/decompose_T1_T2.log",
+   "bytes": 233,
+   "sha256": "a6d4798c52d95e60f6426d8b429e91d35c7c704933ade08bff0bed856b804cd7",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/depth_cohomology.log",
+   "bytes": 1192,
+   "sha256": "4d0ff94213474150d8b84fb61f11a2139b8e985fabdb418fe184044ff8b28767",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/fixed_locus_test_N4_c1.log",
+   "bytes": 396,
+   "sha256": "ca1c574fe35dab91eac70dac1ec252017a977daaf0ff359c9a52df599cd18afa",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/invariant_lift_order2.log",
+   "bytes": 708,
+   "sha256": "0d5915002c9b9df4b61e6a722894621f7d1a7269aaeda80a6989a1f16b801420",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/invariant_lift_order4.log",
+   "bytes": 972,
+   "sha256": "83583db1635017456cb07d8327bd3e00166a15ea5cb68ffeb10bef1aafe20bd2",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/invariant_lift_order6.log",
+   "bytes": 1235,
+   "sha256": "863f500b98ea482e65a2ae8a0cfc570acc67b230f7d681c4cbd629f58b23ae31",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/linear_family_test.log",
+   "bytes": 1051,
+   "sha256": "08c1f54be35fc1d9a9920c5e54dd0d6c4ac012c6166b4a46d41068dd6a3a1b90",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/literature_workflow_output.json",
+   "bytes": 38588,
+   "sha256": "d88bec963376abfe2257e12bd5d992c6b83157dfd365acfcb7c9da99abd06068",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/verify_lift_state_order6.log",
+   "bytes": 751,
+   "sha256": "10035babebee178c1b38fe1bd75a8cce1e4800cfb0597fc4ef766b60655d5311",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/logs/vertex_link_vs_packet_sphere.log",
+   "bytes": 446,
+   "sha256": "34aa2caeba318a4fab32cbc24d0e131e88dc21b84d00865f7eed4edef7b7677b",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/characters.sage",
+   "bytes": 4141,
+   "sha256": "cf8b312309e260d4a10e067ca2462526405b8c81f9386c497bb7f7078a094ea8",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/characters.sage.py",
+   "bytes": 5026,
+   "sha256": "2a60fa6e21b7bda30dcd10b71350d5691adab9c18022792a99b2a2ce7c287c2a",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/chart_certificate.m2",
+   "bytes": 2513,
+   "sha256": "97ad31f1390cb0424d6219b7dc653b57657b3324f9baf41c8c2367f27a0efe5f",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/class_characters_T1_T2.m2",
+   "bytes": 3347,
+   "sha256": "0934f1a1cdf8d2e70397ef97b44a40dd22bef1410290a36ed2ee324bb31d8e27",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/cubic_factor_structure.m2",
+   "bytes": 1692,
+   "sha256": "4607d2c5f0b1f3293a2f2544c846e6b4d6bb1bc8c6d1ccc735d9073a00422998",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/decompose_T1_T2.sage",
+   "bytes": 1539,
+   "sha256": "0749cad8754c8853c7b47ccfc507f09a9ce31cd7271e51207f793d5cfac15f5f",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/decompose_T1_T2.sage.py",
+   "bytes": 2068,
+   "sha256": "d32301d9de162523bf7da0dc43ae0b3d4e9f1d7d1e98d2dd160e73da18e77060",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/depth_cohomology.m2",
+   "bytes": 3200,
+   "sha256": "74bf67932f5591abc7d8cdb58b0e4716af6044205c3013aea83f0ccb19d4a6a5",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/fixed_locus_test.m2",
+   "bytes": 3112,
+   "sha256": "7a731afc911ac650ba2333ffeac3d35e0c6e3cdc78dbc11b3d4a68d973b19eb3",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/hash_run.py",
+   "bytes": 637,
+   "sha256": "65700152a7ae1f45a501783a1a2d39fdb9079207cd21b34ad9114cce99d250b3",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/invariant_lift.m2",
+   "bytes": 9225,
+   "sha256": "7c1762cf2df2eb6291c9663724751ce59c167be0a2bf834a484c670394e101ac",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/linear_family_test.m2",
+   "bytes": 2122,
+   "sha256": "20d7e35f119737f97f91ee9f07cd616dde7e8beed687372a3a3df8b3ee521341",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/verify_lift_state.py",
+   "bytes": 10420,
+   "sha256": "4bebee741ec351ab2ffecc029b1a2d44cd3f57a04e52756af94fe787903a5bc0",
+   "git_blob_sha1": null,
+   "mode": "644"
+  },
+  {
+   "path": "runs/cp2-nine-vertex-invariant-smoothing-2026-09-10/scripts/vertex_link_vs_packet_sphere.py",
+   "bytes": 3094,
+   "sha256": "176b0e54d7808bdbc90b006ce345c56411530f368903b4050c7e33b9839e46f5",
+   "git_blob_sha1": null,
+   "mode": "644"
+  }
+ ]
+}

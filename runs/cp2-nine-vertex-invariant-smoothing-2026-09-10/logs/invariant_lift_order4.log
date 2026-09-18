@@ -1,0 +1,19 @@
+generators 36 relations 90
+generator_permutation_check true
+relation_transport_check true
+CHECK|dim_T1_0_invariants|5
+invariant_basis_columns {0, 2, 5, 72, 73}
+CHECK|dim_coordinate_invariants|3
+intrinsic_invariant_directions_columns {3, 4}
+two_intrinsic_invariant_tangents_verified true
+generator_orbits {9, 27} representatives {x_1*x_2*x_3*x_4, x_1*x_2*x_4*x_8}
+order 1 done: F1 terms {1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1}
+CHECK|order_2_obstruction_vanishes|true
+order 2 done in 1.21946 s; F_2 nonzero entries 36 (mod I nonzero: 36); R_2 nonzero entries 0
+CHECK|order_3_obstruction_vanishes|true
+order 3 done in 1.14407 s; F_3 nonzero entries 9 (mod I nonzero: 9); R_3 nonzero entries 54
+CHECK|order_4_obstruction_vanishes|true
+order 4 done in 1.28526 s; F_4 nonzero entries 9 (mod I nonzero: 9); R_4 nonzero entries 81
+CHECK|FR_vanishes_through_order|4
+CHECK|FR_exact_zero|false
+INVARIANT_LIFT_DONE

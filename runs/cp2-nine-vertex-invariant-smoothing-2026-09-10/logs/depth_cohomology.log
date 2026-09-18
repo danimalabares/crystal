@@ -1,0 +1,46 @@
+CHECK|dim_A|5  degree 36
+CHECK|depth_A|3
+CHECK|Ext^8_S(A,S)_is_zero|true  (dual to H^1_m(A))
+CHECK|Ext^7_S(A,S)_is_zero|true  (dual to H^2_m(A))
+CHECK|Ext^6_S(A,S)_is_zero|false  (dual to H^3_m(A))
+   degrees of generators: {{-9}}
+CHECK|Ext^5_S(A,S)_is_zero|true  (dual to H^4_m(A))
+CHECK|h^1(O_X(-3))|0
+CHECK|h^1(O_X(-2))|0
+CHECK|h^1(O_X(-1))|0
+CHECK|h^1(O_X(0))|0
+CHECK|h^1(O_X(1))|0
+CHECK|h^1(O_X(2))|0
+CHECK|h^1(O_X(3))|0
+CHECK|h^2(O_X(-3))|0
+CHECK|h^2(O_X(-2))|0
+CHECK|h^2(O_X(-1))|0
+CHECK|h^2(O_X(0))|1
+CHECK|h^2(O_X(1))|0
+CHECK|h^2(O_X(2))|0
+CHECK|h^2(O_X(3))|0
+CHECK|h^3(O_X(-3))|0
+CHECK|h^3(O_X(-2))|0
+CHECK|h^3(O_X(-1))|0
+CHECK|h^3(O_X(0))|0
+CHECK|h^3(O_X(1))|0
+CHECK|h^3(O_X(2))|0
+CHECK|h^3(O_X(3))|0
+CHECK|h^4(O_X(-3))|165
+CHECK|h^4(O_X(-2))|45
+CHECK|h^4(O_X(-1))|9
+CHECK|h^4(O_X(0))|1
+CHECK|h^4(O_X(1))|0
+CHECK|h^4(O_X(2))|0
+CHECK|h^4(O_X(3))|0
+CHECK|h^0(O_X)|1
+CHECK|h^0(O_X(1))|9  A_1 = 9
+CHECK|h^0(O_X(4))|459  A_4 = 459
+CHECK|I_saturated|true
+CHECK|hilbert_polynomial|(3/2)*i^4+(9/2)*i^2+3
+CHECK|chi(O_X)|3
+CHECK|dim_Hom_S(I,A)_0|93
+CHECK|dim_Hom_module_degree0|93
+CHECK|h^0(N_X)_via_sheaf_on_X|93  time 6.41751
+CHECK|Hom_module_degree0_equals_h0N|true
+DEPTH_COHOMOLOGY_DONE

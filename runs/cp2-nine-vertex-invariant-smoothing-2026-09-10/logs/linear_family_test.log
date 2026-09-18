@@ -1,0 +1,15 @@
+hilbert_function_A_0..8 {1, 9, 45, 165, 459, 1053, 2109, 3825, 6435}
+trial 0 (a,b)=(1,0) hilbert_function_0..8 {1, 9, 45, 165, 459, 1026, 2001, 3537, 5832} same_as_A false
+   dim 5 degree 27 (A: dim 5 degree 36)
+trial 1 (a,b)=(0,1) hilbert_function_0..8 {1, 9, 45, 165, 459, 999, 1704, 2493, 3636} same_as_A false
+   dim 5 degree 9 (A: dim 5 degree 36)
+               5
+trial 2 (a,b)=(-,2) hilbert_function_0..8 {1, 9, 45, 165, 459, 999, 1704, 2322, 3042} same_as_A false
+               3
+   dim 4 degree 27 (A: dim 5 degree 36)
+Vinv column 0 hilbert_function_0..6 {1, 9, 45, 165, 459, 981, 1578} same_as_A false dim 5 degree 9
+Vinv column 1 hilbert_function_0..6 {1, 9, 45, 165, 459, 966, 1416} same_as_A false dim 3 degree 36
+Vinv column 2 hilbert_function_0..6 {1, 9, 45, 165, 459, 963, 1444} same_as_A false dim 4 degree 9
+Vinv column 3 hilbert_function_0..6 {1, 9, 45, 165, 459, 1026, 2001} same_as_A false dim 5 degree 27
+Vinv column 4 hilbert_function_0..6 {1, 9, 45, 165, 459, 999, 1704} same_as_A false dim 5 degree 9
+LINEAR_FAMILY_TEST_DONE
