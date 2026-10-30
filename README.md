@@ -23,7 +23,7 @@ This connection is not established by either imported computation.
 - [STATUS.md](STATUS.md): evidence, blockers, priorities, and explanation status.
 - [SOURCES.md](SOURCES.md): starting sources and inherited source indexes.
 - [MIGRATION.md](MIGRATION.md): exact provenance, dependencies, and setup state.
-- [docs/LOCAL_SETUP.md](docs/LOCAL_SETUP.md): installation at `~/dr/crystal` and the local `$alias` step.
+- [docs/LOCAL_SETUP.md](docs/LOCAL_SETUP.md): installation at `~/books/research/crystal` and the local `$alias` step.
 
 ## Reproduction
 
