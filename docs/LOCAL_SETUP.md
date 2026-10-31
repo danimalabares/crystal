@@ -13,4 +13,4 @@ Claude, using the local `$alias` skill.
   are only committed on explicit request. Run `sm` or open a new shell to pick
   up `dcrys`.
 
-The explanation requirement is at `~/books/research/crystal/dani-explanations-request.md`.
+The explanation requirement is `dani-explanations-request.md` at the root of this repository.
